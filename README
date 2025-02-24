@@ -1,0 +1,57 @@
+Description du projet
+
+Ce projet vise à comparer les performances de deux structures de données pour la recherche d'ouvrages dans une bibliothèque :
+
+Liste chaînée (complexité O(n))
+Table de hachage (complexité moyenne O(1), pire cas O(n))
+
+Le temps de recherche selon plusieurs critères (numéro, titre, auteur) en fonction de la taille de la bibliothèque.
+
+
+Instructions d'utilisation
+
+make
+./main GdeBiblio.txt 100
+make clean
+
+Contenu des fichiers:
+
+1. Fichiers sources 
+
+biblioH.c / biblioH.h : Implémentation de la table de hachage.
+biblioLC.c / biblioLC.h : Implémentation de la liste chaînée.
+entreeSortieH.c / entreeSortieH.h : Gestion des entrées/sorties pour la table de hachage.
+entreeSortieLC.c / entreeSortieLC.h : Gestion des entrées/sorties pour la liste chaînée.
+main.c :
+rogramme principal permettant d'effectuer les comparaisons de recherche.
+
+2. Fichiers autres:
+
+Makefile : Automatisation de la compilation et du nettoyage.
+comparison_recherche.txt : Fichier avec les résultats des tests.
+Excercise3_Comparaison.txt : Résumé des observations et conclusions.
+GdeBiblio.txt :Biblio donne
+Raport Projet : court raport de project
+
+
+User se présente sous forme de menu avec plusieurs options :
+
+1)Recherche par numéro
+2)Recherche par titre
+3)Recherche par auteur
+4)Affichage de tous les ouvrages
+5)Quitter le programme
+
+
+Explication des tests
+
+Nous testons plusieurs cas :
+Recherche d'un livre présent
+Recherche d'un livre absent
+Impact de la taille de la table de hachage
+Recherche d'ouvrages en plusieurs exemplaires
+
+Les résultats sont sauvegardés dans comparison_recherche.txt et visualisés sous forme de courbes.
+
+
+
